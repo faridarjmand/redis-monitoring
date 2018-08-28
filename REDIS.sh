@@ -27,6 +27,9 @@ JSON ()
                 echo -e "\t  \"{#IP}\":\"$IP\" \n\t },"
         done
         echo -e "\n\t { \"{#END}\":\"END\" }\n\n\t]\n}"
+        if [ -z $PORT ] || [ -z $ADDRESS ] || [ -z $IP ];then
+                echo ERROR
+        fi
 }
 
 ##############################
